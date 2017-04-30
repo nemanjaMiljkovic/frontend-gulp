@@ -9,7 +9,8 @@
     "img": "gulp optimizeImg",
     "clean": "gulp clean",
     "build": "gulp build",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "cssAnalyze": "gulp css:analyze"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
@@ -22,14 +23,17 @@
     "del": "^2.2.2",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-imagemin": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.4.0",
     "gulp-sass": "^3.1.0",
     "gulp-usemin": "^0.3.28",
-    "postcss-import": "^9.1.0",
+    "parker": "^0.0.10",
+    "postcss-scss": "^0.4.1",
     "webpack": "^2.4.1",
     "webpack-merge": "^4.1.0"
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {}
 }
