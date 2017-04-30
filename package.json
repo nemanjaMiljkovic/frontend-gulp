@@ -17,7 +17,6 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
-    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.8",
     "cssnano": "^3.10.0",
     "del": "^2.2.2",
@@ -25,6 +24,7 @@
     "gulp-imagemin": "^3.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.4.0",
+    "gulp-purifycss": "^0.2.0",
     "gulp-sass": "^3.1.0",
     "gulp-usemin": "^0.3.28",
     "parker": "^0.0.10",
@@ -35,5 +35,7 @@
   "browserslist": [
     "last 2 versions"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "foundation-sites": "^6.3.1"
+  }
 }

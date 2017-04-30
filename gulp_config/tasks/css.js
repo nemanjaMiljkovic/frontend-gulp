@@ -1,11 +1,13 @@
 const gulp = require('gulp'),
       fs = require('fs'),
+      { html } = require('../paths'),
       sass = require('gulp-sass'),
       autoprefixer = require('autoprefixer'),
       cssnano = require('cssnano'),
       postcss = require('gulp-postcss'),
       Parker = require('parker/lib/Parker'),
       scssParser = require('postcss-scss'),
+      purify = require('gulp-purifycss'),
       plumber = require('gulp-plumber'),
       { css } = require('../paths');
 
@@ -23,8 +25,8 @@ function cssDev() {
 
 function cssProd() {
   return gulp.src(css.src)
-        .pipe(plumber())
         .pipe(sass().on('error', sass.logError))
+        .pipe(purify([html.src,]))
         .pipe(postcss([autoprefixer, cssnano]))
         .pipe(gulp.dest(css.prodDest));
 }
