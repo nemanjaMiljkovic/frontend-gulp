@@ -2,4 +2,4 @@ const gulp = require('gulp');
 
 
 gulp.task('build', gulp.series(['clean',
-                   gulp.parallel(['css:prod', 'js:prod', 'optimizeImg'])]));
+                   gulp.parallel(['html:prod', 'css:prod', 'js:prod', 'optimizeImg'])]));

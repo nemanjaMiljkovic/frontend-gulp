@@ -1,4 +1,5 @@
 require('./gulp_config/tasks/css');
+require('./gulp_config/tasks/html');
 require('./gulp_config/tasks/scripts');
 require('./gulp_config/tasks/img');
 require('./gulp_config/tasks/clean');

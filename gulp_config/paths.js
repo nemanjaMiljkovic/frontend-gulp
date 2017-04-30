@@ -2,6 +2,7 @@
 module.exports = {
   html: {
     src: './app/index.html',
+    prodDest: './app/dist/'
   },
   css: {
     src: './app/assets/css/styles.css',
