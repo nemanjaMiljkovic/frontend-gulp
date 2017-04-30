@@ -10,7 +10,9 @@
     "clean": "gulp clean",
     "build": "gulp build",
     "watch": "gulp watch",
-    "cssAnalyze": "gulp css:analyze"
+    "sprites": "gulp sprites",
+    "cssAnalyze": "gulp css:analyze",
+    "jsAnalyze": "webpack --config webpack.dev.js --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
@@ -23,6 +25,7 @@
     "gulp": "gulpjs/gulp#4.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.2.0",
+    "gulp-modernizr": "^1.0.0-alpha",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.4.0",
     "gulp-purifycss": "^0.2.0",
@@ -32,12 +35,19 @@
     "parker": "^0.0.10",
     "postcss-scss": "^0.4.1",
     "webpack": "^2.4.1",
+    "webpack-bundle-analyzer": "^2.4.0",
     "webpack-merge": "^4.1.0"
   },
   "browserslist": [
-    "last 2 versions"
+    "last 2 versions",
+    "ie >= 9",
+    "Android >= 2.3",
+    "ios >= 7"
   ],
   "dependencies": {
     "foundation-sites": "^6.3.1"
+  },
+  "engine": {
+    "node": "^7.9.0"
   }
 }

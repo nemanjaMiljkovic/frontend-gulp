@@ -1,6 +1,6 @@
 const gulp = require('gulp'),
       browserSync = require('browser-sync').create(),
-      {css, js, html } = require('../paths');
+      {css, js, html, img } = require('../paths');
 
 
 gulp.task('watch', gulp.series(['css:dev', 'js:dev', watch]));
@@ -17,8 +17,7 @@ function watch() {
 
   gulp.watch(html.src).on('change', browserSync.reload);
   gulp.watch(css.watch).on('change', gulp.series(['css:dev', inject]));
-  gulp.watch(js.watch).on('change', gulp.series(['js:dev', browserSync.reload]));
-
+  gulp.watch(js.watch).on('change', gulp.series(['js:dev', 'modernizer', browserSync.reload]));
 }
 
 
