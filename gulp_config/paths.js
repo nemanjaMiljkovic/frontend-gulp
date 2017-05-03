@@ -5,8 +5,8 @@ module.exports = {
     prodDest: './app/dist/'
   },
   css: {
-    src: './app/assets/css/styles.css',
-    watch: './app/assets/css/**/*.css',
+    src: './app/assets/css/styles.scss',
+    watch: './app/assets/css/**/*.scss',
     modules: './app/assets/css/modules/',
     dest: './app/temp/css/',
     prodDest: './app/dist/css/',

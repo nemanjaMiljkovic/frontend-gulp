@@ -45,6 +45,7 @@
     "ios >= 7"
   ],
   "dependencies": {
+    "animejs": "^2.0.2",
     "foundation-sites": "^6.3.1"
   },
   "engine": {

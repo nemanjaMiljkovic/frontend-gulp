@@ -3,11 +3,12 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    bundle: './app/assets/js/index.js'
+    bundle: './app/assets/js/index.js',
+    vendors: ['animejs'],
   },
   output: {
     path: path.join(__dirname, 'app', 'temp', 'js'),
-    filename: 'bundle.js',
+    filename: '[name].js',
     publicPath: './'
   },
   module: {
