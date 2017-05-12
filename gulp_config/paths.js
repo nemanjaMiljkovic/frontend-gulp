@@ -18,8 +18,8 @@ module.exports = {
   },
   img: {
     src: './app/assets/img/*',
-    srcSprite: './app/assets/img/ico/*',
-    destSprite: './app/assets/img/sprites',
+    srcSprite: './app/assets/img/icons/**/*.svg',
+    destSprite: './app/temp/sprite/',
     prodDest: './app/dist/img/',
   }
 }
